@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Quantum Lane Softworks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <style>
+        .deep-blue { color: #00008B; }
+        .bright-cyan { color: #00FFFF; }
+        .silver { color: #C0C0C0; }
+        .dark-gray { color: #A9A9A9; }
+        .electric-purple { color: #BF00FF; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="Images/QuantumLaneLogoNav.webp" alt="Quantum Lane Softworks Logo" class="h-10">
+                <div class="text-xl font-bold">Quantum Lane Softworks</div>
+            </div>
+            <nav class="space-x-4">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <div class="dropdown inline-block relative">
+                    <a class="hover:text-gray-400 cursor-pointer dropdown-toggle" id="aboutDropdown" data-toggle="dropdown">
+                        About
+                    </a>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#vision">Vision</a></li>
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#mission">Mission</a></li>
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#values">Values</a></li>
+                    </ul>
+                </div>
+                <a href="game.html" class="hover:text-gray-400">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="bg-cover bg-center h-screen" style="background-color: rgba(7, 7, 7, 0.663);">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold">Welcome to Quantum Lane Softworks</h1>
+                <p class="mt-4 text-xl">We strive to make a difference in the gaming world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-16 bg-gray-100 text-white" style="background-color: rgba(7, 7, 7, 0.663);">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Vision Statement</h2>
+            <div class="mt-8 flex flex-col md:flex-row items-center">
+                <img id="visionImage" src="Images/QuantumLaneVision.png" alt="Vision Image" class="w-full md:w-1/2 rounded-lg shadow-lg">
+                <p class="mt-4 md:mt-0 md:ml-8 text-lg text-center max-w-3xl mx-auto">To be the industry leader in delivering technologically advanced, creatively captivating gaming experiences.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- Mission Section -->
+    <section id="mission" class="py-16 bg-white text-white" style="background-color: rgba(7, 7, 7, 0.663);">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Mission Statement</h2>
+            <div class="mt-8 flex flex-col md:flex-row items-center">
+                <img id="missionImage"src="Images/QuantumLaneMissionStatemengt.png" alt="Mission Image" class="w-full md:w-1/2 rounded-lg shadow-lg" id="missionImage">
+                <p class="mt-4 md:mt-0 md:ml-8 text-lg text-center max-w-3xl mx-auto">Founded in 2012 to revitalize the RPG genre, Quantum Lane Softworks continues to adopt a revolutionary approach to the game industry. 
+                    Through the creation of genre defining gameplay mechanics, creating deeply immersive and evolving storylines, 
+                    while pushing the envelope on graphics, Quantum Lane Softworks transports players to 
+                    <a href="game.html" class="text-blue-500 hover:underline">extraordinary worlds</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- Values Section -->
+    <section id="values" class="py-16 bg-gray-100" style="background-color: rgba(7, 7, 7, 0.663);">
+        <div class="container mx-auto px-4">
+            <h1 id="valueTitle" class="text-3xl font-bold text-center text-white">Core Values</h1>
+            <div id="valueDescription">
+                <p>
+                    Our core values embody the essence of Quantum Lane Softworks. 
+                </p>
+                <p>
+                    They form the bedrock of our culture, guiding how we interact 
+                </p>
+                <p>
+                    with each other, engage with our players, and make decisions.
+                </p>   
+            </div>
+            <br>
+            <div id="imagineContainer">
+                <h2 id="imagineTitle" class="text-3xl font-bold text-center text-white">
+                    <span>I</span>
+                    <span>.</span>
+                    <span>M</span>
+                    <span>.</span>
+                    <span>A</span>
+                    <span>.</span>
+                    <span>G</span>
+                    <span>.</span>
+                    <span>I</span>
+                    <span>.</span>
+                    <span>N</span>
+                    <span>.</span>
+                    <span>E</span>
+                    <span>.</span>
+                </h2>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('innovation')">
+                    <img src="Images/QuantumI1.webp" alt="Innovation" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">INNOVATION</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('mastery')">
+                    <img src="Images/QuantumMImage.webp" alt="Mastery" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">MASTERY</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('adaptability')">
+                    <img src="Images/QuantumAImage.webp" alt="Adaptability" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">ADAPTABILITY</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('growth')">
+                    <img src="Images/QuantumG.webp" alt="Growth" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">GROWTH</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('integrity')">
+                    <img src="Images/QuantumI2.webp" alt="Integrity" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">INTEGRITY</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('community')">
+                    <img src="Images/QuantumN2.webp" alt="Nuanced Community" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">NUANCED COMMUNITY</h3>
+                </div>
+                <div class="bg-black p-4 rounded-lg shadow-lg cursor-pointer" onclick="openModal('ethics')">
+                    <img src="Images/QuantumEImage.webp" alt="Ethically Centered" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold mt-4 text-white">ETHICALLY CENTERED</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Quantum Lane Softworks. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                <a href="contact.html" class="hover:text-gray-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="innovation-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.youtube.com/watch?v=gyn1pR-Mc60" class="text-white hover:underline" target="_blank">
+                    INNOVATION
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Commitment to pushing the boundaries of game design and technology, creating unique and groundbreaking gaming experiences that captivate players everywhere.</p>
+            <button class="mt-4 px-4 py-2 bg-violet-800 text-white rounded hover:bg-blue-700" onclick="closeModal('innovation')">Close</button>
+        </div>
+    </div>
+    <div id="mastery-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.youtube.com/watch?v=WVW50KRaBd8" class="text-white hover:underline" target="_blank">
+                    MASTERY
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Commitment to excellence in all aspects of game development, from storytelling and graphics to gameplay mechanics and user experience.</p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('mastery')">Close</button>
+        </div>
+    </div>
+    <div id="adaptability-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.ted.com/talks/natalie_fratto_3_ways_to_measure_your_adaptability_and_how_to_improve_it?subtitle=en" class="text-white hover:underline" target="_blank">
+                    ADAPTABILITY
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Remain agile and reactive to industry trends, player feedback, employee feedback and technological advancements to continually improve and evolve our games as well as company culture.</p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('adaptability')">Close</button>
+        </div>
+    </div>
+    <div id="growth-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.ted.com/talks/herman_narula_the_transformative_power_of_video_games?subtitle=en" class="text-white hover:underline" target="_blank">
+                    GROWTH
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Committed to continued growth and advancement of employees. Strive to help employees understand their gifts fostering the ability of the individual to make a difference.</p>
+            <p class="mt-4">
+                Generate personal and professional growth for employees, encouraging continuous learning and development.
+            </p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('growth')">Close</button>
+        </div>
+    </div>
+    <div id="integrity-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.youtube.com/watch?v=L2fwsSdo928" class="text-white hover:underline" target="_blank">
+                    INTEGRITY
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Commitment to maintain the best standards of honesty and transparency in every interaction with the community and employees</p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('integrity')">Close</button>
+        </div>
+    </div>
+    <div id="community-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.ted.com/talks/rebecca_darwent_how_to_fund_real_change_in_your_community?subtitle=en" class="text-white hover:underline" target="_blank">
+                    NUANCED COMMUNITY
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Provide a community that promotes inclusivity, and engagement between players and developers who share a passion for RPG games and support one another.</p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('community')">Close</button>
+        </div>
+    </div>
+    <div id="ethics-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-black p-8 rounded-lg max-w-lg mx-auto">
+            <h3 class="text-2xl font-bold text-white">
+                <a href="https://www.ted.com/talks/ray_anderson_the_business_logic_of_sustainability?subtitle=en" class="text-white hover:underline" target="_blank">
+                    ETHICALLY CENTERED
+                </a>
+            </h3>
+            <p class="mt-4 text-white">Every action and decision are focused on sustainability and ethical practices. </p>
+            <p class="mt-4 text-white">
+                Game narratives and business operations focuses on ensuring a lasting and positive impact is left on society and the environment.
+            </p>
+            <button class="mt-4 px-4 py-2 bg-grey-500 text-white rounded hover:bg-blue-700" onclick="closeModal('ethics')">Close</button>
+        </div>
+    </div>
+
+    <!-- Include the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

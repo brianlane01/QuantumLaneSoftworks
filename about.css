@@ -1,0 +1,45 @@
+/* Set background image for the entire webpage */
+body {
+    background: url('Images/QuantumLaneAboutP.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'font-sans', sans-serif;
+     /* Optional: To ensure text is readable */
+}
+
+section {
+    font-weight: 600;
+}
+/* Ensure all sections and modals maintain the background transparency */
+#visionImage {
+    width: 75%;
+}
+
+#missionImage {
+    width: 75%;
+}
+
+#valueDescription {
+    text-wrap: wrap;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#valueTitle {
+    font-size: 60px;
+}
+
+#imagineTitle {
+    font-size: 100px;
+    margin-bottom: 4rem;
+    color: rgb(151, 153, 153);
+}
+
+/* #valueContainer {
+    background: url('Images/Imagine3.webp') no-repeat center;
+    background-size: cover;
+    
+} */

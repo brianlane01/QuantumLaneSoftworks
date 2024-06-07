@@ -1,0 +1,31 @@
+ /* Set background image for the entire webpage */
+body {
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'font-sans', sans-serif;
+     /* Optional: To ensure text is readable */
+}
+/* Ensure all sections maintain the background transparency */
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency as needed */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info h2, .contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #00FFFF; /* Change to preferred color */
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Lane Softworks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="home-bg">
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="Images/QuantumLaneLogoNav.webp" alt="Quantum Lane Softworks Logo" class="h-10">
+                <div class="text-xl font-bold">Quantum Lane Softworks</div>
+            </div>
+            <nav class="space-x-4">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <div class="dropdown inline-block relative">
+                    <a href="about.html" class="hover:text-gray-400 cursor-pointer" id="aboutDropdown">
+                        About
+                    </a>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="about.html#vision">Vision</a></li>
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="about.html#mission">Mission</a></li>
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="about.html#values">Values</a></li>
+                    </ul>
+                </div>
+                <a href="game.html" class="hover:text-gray-400">Game</a>
+            </nav>
+        </div>
+    </header>
+    <section class="bg-cover bg-center h-screen">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold">Welcome to Quantum Lane Softworks</h1>
+                <p class="mt-4 text-xl">We strive to make a difference in the gaming world and beyond.</p>
+            </div>
+        </div>
+    </section>
+        <section class="carouselCon">
+            <h1 id="carouselHeader">
+                WHAT WE ARE WORKING ON
+            </h1>
+            <div class="carousel">
+                <div class="carousel-item carousel-visible">
+                    <img src="Images/GameStyle1.webp" alt="Hero Image 1">
+                    <div class="carousel-caption">
+                        <h2 id="gameTitle1">INTERSTELLAR VOIDBORNE:</h2>
+                        <h3 id="gameTitle2">Echoes of Destiny</h3>
+                        <p>
+                            Interstellar Voidborne: Echoes of Destiny” is an epic virtual reality (VR) 
+                            role-playing game (RPG) set in a sprawling, open-world galaxy that has 
+                            experienced a catastrophic event known as “The Great Collapse.” 
+                        </p>
+                        <a href="game.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-hidden">
+                    <img src="Images/GameCoverArt3.webp" alt="Hero Image 2">
+                    <div class="carousel-caption">
+                        <h2>Game Title 2</h2>
+                        <p>Short description of the game.</p>
+                        <a href="#learn-more" class="btn">Learn More</a>
+                        <a href="#play-now" class="btn">Play Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-hidden">
+                    <img src="hero3.jpg" alt="Hero Image 3">
+                    <div class="carousel-caption">
+                        <h2>Game Title 3</h2>
+                        <p>Short description of the game.</p>
+                        <a href="#learn-more" class="btn">Learn More</a>
+                        <a href="#play-now" class="btn">Play Now</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <div class="carousel-controls">
+                <span class="carousel-prev">&lt;</span>
+                <span class="carousel-next">&gt;</span>
+            </div>
+        </section>
+    
+        <section class="latest-news" id="news">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="news1.jpg" alt="News Thumbnail">
+                    <h3>News Title 1</h3>
+                    <p>Short description of the news item.</p>
+                    <a href="#full-article">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="news2.jpg" alt="News Thumbnail">
+                    <h3>News Title 2</h3>
+                    <p>Short description of the news item.</p>
+                    <a href="#full-article">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="news3.jpg" alt="News Thumbnail">
+                    <h3>News Title 3</h3>
+                    <p>Short description of the news item.</p>
+                    <a href="#full-article">Read More</a>
+                </div>
+                <!-- Add more news items as needed -->
+            </div>
+        </section>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Quantum Lane Softworks. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                <a href="contact.html" class="hover:text-gray-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

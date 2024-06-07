@@ -1,0 +1,206 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.home-bg {
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about-bg {
+    background: url('Images/QuantumLaneAboutP.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game-bg {
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#backgroundIm {
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.user-account a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+/* Hero banner styles */
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.carouselCon {
+    margin: 4rem;
+    background-color: rgba(7, 7, 7, 0.663);
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: auto;
+    margin: 4 auto; /* Center the carousel */
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    padding-left: 9em;
+    width: 90%;
+    height: auto;
+}
+
+/* Adjust the carousel caption */
+.carousel-caption {
+    position: absolute;
+    bottom: 1rem; /* Adjust the position to fit the smaller size */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem; /* Adjust padding to fit the smaller size */
+    border-radius: 5px;
+}
+
+.carousel-caption h2 {
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    margin-bottom: 1rem;
+}
+
+.carousel-caption .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel-controls {
+    position: relative;
+    bottom: 32rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-prev, .carousel-next {
+    background-color: rgb(64, 46, 5);
+    color: #f7f7f7;
+    padding: 1rem; /* Adjust padding to fit the smaller size */
+    cursor: pointer;
+}
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.663);
+    margin: 1rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.news-grid, .games-grid, .esports-grid, .community-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.news-item, .game-item, .esports-item, .community-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.news-item img, .game-item img, .esports-item img, .community-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-media a img {
+    width: 24px;
+    height: auto;
+    margin: 0 0.5rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.newsletter-signup input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.newsletter-signup button {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-hidden {
+    display: none;
+}
+
+.carousel-visible {
+    display: block;
+}
+
+#carouselHeader { 
+    margin-left: 15rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 65px;
+    font-weight: bolder;
+    color: rgb(119, 143, 166);
+}

@@ -1,0 +1,194 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-account a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+/* Hero banner styles */
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    padding-left: 9em;
+    width: 90%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.carousel-caption h2 {
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    margin-bottom: 1rem;
+}
+
+.carousel-caption .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-prev, .carousel-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.news-grid, .games-grid, .esports-grid, .community-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.news-item, .game-item, .esports-item, .community-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.news-item img, .game-item img, .esports-item img, .community-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-media a img {
+    width: 24px;
+    height: auto;
+    margin: 0 0.5rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.newsletter-signup input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.newsletter-signup button {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-hidden {
+    display: none;
+}
+
+.carousel-visible {
+    display: block;
+}
