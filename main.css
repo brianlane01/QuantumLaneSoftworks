@@ -220,3 +220,30 @@ footer {
     font-size: larger;
     padding-bottom: 1rem;
 }
+
+#stemTitle {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#stemDescrip {
+    font-size: larger;
+    padding-bottom: 1rem;
+    text-align: center
+}
+
+#paxTitle1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#paxTitle2 {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+#paxDescrip1 {
+    font-size: larger;
+    padding-bottom: 1rem;
+}
