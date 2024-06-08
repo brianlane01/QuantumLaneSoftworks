@@ -11,23 +11,19 @@ body {
     background-size: cover;
 }
 
-
-.user-account a {
-    color: #fff;
-    margin-left: 1rem;
-}
-
-/* Hero banner styles */
-.hero-banner {
-    position: relative;
-    text-align: center;
-    color: #fff;
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
 }
 
 .carouselCon {
     margin: 4rem;
     background-color: rgba(7, 7, 7, 0.663);
-    height: 1200px;
+    height: 1140px;
 }
 .carousel {
     display: flex;
@@ -50,35 +46,26 @@ body {
 
 /* Adjust the carousel caption */
 .carousel-caption {
-    position: relative; /* Adjust the position to fit the smaller size */
-    left: 50%;
-    justify-content: center;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.725);
+    position: relative;
+    bottom: 5rem; /* Adjust the position to fit the smaller size */
+    left: 14rem;
+    width: 60rem;
+    background-color: rgba(0, 0, 0, 0.528);
     padding: 0.5rem; /* Adjust padding to fit the smaller size */
     border-radius: 5px;
 }
 
 .carousel-caption h2 {
-    margin-bottom: 0.5rem;
     text-align: center;
-    color: white;
-    font-size: large;
-}
-
-#carouselVideo {
-    position: relative;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.793);
-    padding: 0.5rem; /* Adjust padding to fit the smaller size */
-    border-radius: 5px;
+    font-size: xx-large;
+    color: #f4f4f4;
 }
 
 .carousel-caption p {
-    margin-bottom: 1rem;
-    text-align: justify;
-    color: #f4f4f4;
+    margin-bottom: 2rem;
+    text-align: center;
     font-size: large;
+    color: #f4f4f4;
 }
 
 .carousel-caption .btn {
@@ -91,9 +78,8 @@ body {
 }
 
 .carousel-controls {
-    position: absolute;
-    top: 115rem;
-    width: 88%;
+    position: relative;
+    bottom: 55rem;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -106,10 +92,6 @@ body {
     cursor: pointer;
 }
 
-#video1{
-    position: relative;
-    left: 4rem;
-}
 
 /* Section styles */
 section {
@@ -122,67 +104,69 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-.news-grid, .games-grid, .esports-grid, .community-grid {
+.news-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.news-item, .game-item, .esports-item, .community-item {
+.latest-news h2 {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.news-item {
     flex: 1 1 calc(33.333% - 1rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: #090909c3;
     border-radius: 5px;
 }
 
-.news-item img, .game-item img, .esports-item img, .community-item img {
+.news-item h3 {
+    text-align: center;
+    color: #f4f4f4;
+    font-size: larger;
+    margin: 1.5rem;
+}
+
+.news-item p {
+    margin: 1rem;
+    text-align: justify;
+    color: white;
+}
+
+.news-item img {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
 }
 
 section a {
-    color: #007bff;
+    color: #ff0059;
     text-decoration: none;
 }
 
-#issueStatement {
-    background: rgba(0, 0, 0, 0.468);
-    margin-bottom: 2rem;
-}
-
-#issueStatement h1 {
-    color: white;
-    font-size: 30px;
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
     text-align: center;
-    margin: 1.5rem;
 }
 
-#issueHeadContainer {
-    background: rgba(0, 0, 0, 0.468);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
 }
 
-#mainIssueImage {
-    height: 650px;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.issueStatements {
-    text-align: center;
-    color: white;
-    max-width: 700px; /* Optional: to constrain text width for better readability */
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    font-size: larger;
+.latest-news {
+    background: #0000009e;
 }
 
 .carousel-hidden {
