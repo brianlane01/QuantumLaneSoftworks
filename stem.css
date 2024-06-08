@@ -48,7 +48,7 @@ header {
 .carousel-caption {
     position: relative;
     bottom: 5rem; /* Adjust the position to fit the smaller size */
-    left: 10rem;
+    left: 5rem;
     width: 60rem;
     background-color: rgba(0, 0, 0, 0.528);
     padding: 0.5rem; /* Adjust padding to fit the smaller size */
@@ -141,7 +141,7 @@ section h2 {
 }
 
 .news-item img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-bottom: 1rem;
 }
