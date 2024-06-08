@@ -1,71 +1,61 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const button = document.getElementById('myButton');
-//     button.addEventListener('click', function() {
-//         alert('Button was clicked!');
-//     });
-// });
-
-function openModal(modalId) {
-    document.getElementById(modalId + '-modal').classList.remove('hidden');
-}
-
-function closeModal(modalId) {
-    document.getElementById(modalId + '-modal').classList.add('hidden');
-}
-
 document.addEventListener('DOMContentLoaded', function() {
+    // Button click example (commented out in the original)
+    // const button = document.getElementById('myButton');
+    // button.addEventListener('click', function() {
+    //     alert('Button was clicked!');
+    // });
+
+    // Modal functionality
+    function openModal(modalId) {
+        document.getElementById(modalId + '-modal').classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId + '-modal').classList.add('hidden');
+    }
+
+    // Dropdown functionality
     var dropdown = document.querySelector('.dropdown');
-    var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+    if (dropdown) {
+        var dropdownMenu = dropdown.querySelector('.dropdown-menu');
     
-    dropdown.addEventListener('mouseenter', function() {
-        dropdownMenu.classList.remove('hidden');
-    });
+        dropdown.addEventListener('mouseenter', function() {
+            dropdownMenu.classList.remove('hidden');
+        });
     
-    dropdown.addEventListener('mouseleave', function() {
-        dropdownMenu.classList.add('hidden');
-    });
-});
+        dropdown.addEventListener('mouseleave', function() {
+            dropdownMenu.classList.add('hidden');
+        });
+    }
 
-
-document.addEventListener('DOMContentLoaded', function() {
+    // Carousel functionality
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
 
-    document.querySelector('.carousel-next').addEventListener('click', () => {
-        nextSlide();
-    });
-
-    document.querySelector('.carousel-prev').addEventListener('click', () => {
-        prevSlide();
-    });
-
     function updateSlidePosition() {
-        for (let slide of slides) {
-            slide.classList.remove('carousel-visible');
-            slide.classList.add('carousel-hidden');
-        }
-        slides[currentSlide].classList.add('carousel-visible');
+        slides.forEach((slide, index) => {
+            slide.classList.toggle('carousel-visible', index === currentSlide);
+            slide.classList.toggle('carousel-hidden', index !== currentSlide);
+        });
     }
 
     function nextSlide() {
-        if (currentSlide === totalSlides - 1) {
-            currentSlide = 0;
-        } else {
-            currentSlide++;
-        }
+        currentSlide = (currentSlide + 1) % totalSlides;
         updateSlidePosition();
     }
 
     function prevSlide() {
-        if (currentSlide === 0) {
-            currentSlide = totalSlides - 1;
-        } else {
-            currentSlide--;
-        }
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
         updateSlidePosition();
     }
 
+    document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+    document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+
     // Initialize the first slide as visible
     updateSlidePosition();
+
+    // Optional auto-slide functionality
+    setInterval(nextSlide, 12000);
 });

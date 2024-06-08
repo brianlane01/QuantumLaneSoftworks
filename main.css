@@ -33,11 +33,6 @@ header {
     background-size: cover;
 }
 
-.user-account a {
-    color: #fff;
-    margin-left: 1rem;
-}
-
 /* Hero banner styles */
 .hero-banner {
     position: relative;

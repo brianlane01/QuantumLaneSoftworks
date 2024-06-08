@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstellar Voidborne: Echoes of Destiny</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="game.css">
 </head>
 <body class="game-bg">
     <header class="bg-gray-800 text-white">
@@ -33,36 +33,99 @@
             </nav>
         </div>
     </header>
-    <main class="container">
-        <section>
-            <h2>About the Game</h2>
-            <p>"Interstellar Voidborne: Echoes of Destiny" is a sci-fi fantasy RPG that takes players on an epic journey through space and time. Explore distant galaxies, encounter alien civilizations, and uncover the secrets of the universe.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Immersive Storyline</li>
-                <li>Dynamic Combat System</li>
-                <li>Expansive Open Worlds</li>
-                <li>Multiplayer Capabilities</li>
+    <section class="bg-cover bg-center h-screen" id="mainSection">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="text-center text-white" id="mainImage">
+                <div id="titleDescription"> 
+                    <h1 class="text-5xl font-bold">Interstellar Voidborne: Echoes of Destiny</h1>
+                    <p class="mt-4 text-2xl font-bold">An epic VR RPG in a post-apocalyptic sci-fi fantasy galaxy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Overview Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Game Overview</h2>
+            <p class="mt-4 text-lg text-center">“Interstellar Voidborne: Echoes of Destiny” is an epic virtual reality (VR) role-playing game (RPG) set in a sprawling, open-world galaxy that has experienced a catastrophic event known as “The Great Collapse.” This calamity caused a widespread loss of technological advancement, plunging civilizations into chaos and darkness. However, amidst the ruins, certain individuals were mysteriously gifted extraordinary powers. The player assumes the role of one such individual, embarking on a quest to uncover lost troves of ancient knowledge and restore the galaxy to its former glory.</p>
+            <br>
+            <div class="flex justify-center">
+                <img id="gameOverviewImage" src="Images/5d4a35a509d0670771d2647c06823b3a.webp" alt="Game Overview Image" class="w-full md:w-1/2 rounded-lg shadow-lg">
+            </div>
+            <br>
+            <h3 class="text-2xl font-bold text-center">Genre and Style:</h3>
+            <p class="mt-4 text-lg text-center"><strong>Genre:</strong> VR RPG<br>
+            <strong>Style:</strong> Open-World Exploration, Post-Apocalyptic Sci-Fi Fantasy</p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="py-16 bg-black-100 text-white key-features-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Key Features</h2>
+            <ul class="mt-4 text-lg list-disc list-inside">
+                <li>Immersive VR Experience: Utilizing cutting-edge VR technology, “Interstellar Voidborne: Echoes of Destiny” offers an unparalleled level of immersion, allowing players to physically explore and interact with the vast, beautifully rendered galaxy.</li>
+                <li>Dynamic Open World: The game features a richly detailed and dynamic open world, including diverse planets, mysterious space stations, and hidden ruins, each with its own unique environment and history.</li>
+                <li>Extraordinary Powers: Players can harness extraordinary abilities granted by “The Awakening,” ranging from elemental manipulation to telekinesis, which are essential for overcoming challenges and enemies.</li>
+                <li>Lore-Rich Narrative: A deep, engaging storyline unfolds as players journey through the galaxy, discovering ancient relics, deciphering cryptic messages, and learning about the civilizations that once thrived before The Great Collapse.</li>
+                <li>Exploration and Discovery: The quest to find the lost troves of knowledge encourages extensive exploration and rewards players with powerful artifacts, forgotten technologies, and crucial information about the galaxy’s past.</li>
+                <li>Character Customization: Players can customize their character’s appearance, abilities, and equipment, allowing for a personalized and unique gameplay experience.</li>
             </ul>
-        </section>
-        <img src="path_to_game_image.jpg" class="img-fluid" alt="Interstellar Voidborne">
-    </main>
+        </div>
+    </section>
+
+    <!-- Educational Impact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Educational Impact</h2>
+            <p class="mt-4 text-lg">“Interstellar Voidborne: Echoes of Destiny” not only provides an entertaining and immersive gaming experience but also aims to address the issue of limited access to STEM education in various areas throughout the world. By integrating high-quality STEM educational content into the game's storyline and mechanics, players are encouraged to learn about science, technology, engineering, and mathematics in a fun and engaging way.</p>
+            <p class="mt-4 text-lg">Through solving complex puzzles, experimenting with advanced technologies, and understanding the scientific principles behind the game's world, players can develop critical thinking skills and gain valuable knowledge that can be applied in real-world STEM fields.</p>
+            <p class="mt-4 text-lg">
+                Additionally, the game includes specific modules dedicated to teaching programming and chemistry. 
+                Players will learn to write code to solve in-game challenges, automate tasks, and simulate scientific 
+                experiments. Meanwhile, chemistry concepts are woven into the gameplay, allowing players to explore 
+                chemical reactions, compound formation, and the periodic table, enhancing their understanding and 
+                appreciation of this essential science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-16 bg-black-100 text-white carousel-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center">Gameplay Images</h2>
+            <div class="carousel relative mt-8">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="photos.html"><img src="Images/GamePlay7.jpg" alt="Gameplay Image 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="photos.html"><img src="Images/a2691d2f4a36fbf113c4ca1ab9ffa59a.webp" alt="Gameplay Image 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="photos.html"><img src="Images/GamePlay6.webp" alt="Gameplay Image 3"></a>
+                    </div>
+                </div>
+                <a class="carousel-control left" onclick="prevSlide()">&#10094;</a>
+                <a class="carousel-control right" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2024 Quantum Lane Softworks. All rights reserved.</p>
             <div class="mt-4 space-x-4">
                 <a href="#" class="hover:text-gray-400">Privacy Policy</a>
                 <a href="#" class="hover:text-gray-400">Terms of Service</a>
-                <a href="contact.html" class="hover:text-gray-400">Contact Us</a>
+                <a href="#" class="hover:text-gray-400">Contact Us</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

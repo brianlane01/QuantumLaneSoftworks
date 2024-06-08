@@ -1,0 +1,88 @@
+body {
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.663);
+    margin: 1rem 0;
+}
+
+#mainSection {
+    background: url('Images/GameArt2.webp')  no-repeat center;
+    background-size: cover;
+    
+}
+
+#mainImage {
+    background: rgba(0, 0, 0, 0.611);
+}
+
+#titleDescription {
+    margin: 2rem;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.carousel-control.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-section {
+    background-color: rgba(7, 7, 7, 0.663);
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-visible {
+    display: block;
+}
+
+.carousel-hidden {
+    display: none;
+}
