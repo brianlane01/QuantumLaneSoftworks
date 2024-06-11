@@ -1,0 +1,238 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('Images/QuantumLaneLogo1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+}
+
+.carouselCon {
+    margin: 4rem;
+    background-color: rgba(7, 7, 7, 0.663);
+    height: 1140px;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: auto;
+    margin: 4 auto; /* Center the carousel */
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    padding-left: 9em;
+    width: 90%;
+    height: 50%;    
+}
+
+/* Adjust the carousel caption */
+.carousel-caption {
+    position: relative;
+    bottom: 5rem; /* Adjust the position to fit the smaller size */
+    left: 5rem;
+    width: 60rem;
+    background-color: rgba(0, 0, 0, 0.528);
+    padding: 0.5rem; /* Adjust padding to fit the smaller size */
+    border-radius: 5px;
+}
+
+.carousel-caption h2 {
+    text-align: center;
+    font-size: xx-large;
+    color: #f4f4f4;
+}
+
+.carousel-caption p {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: large;
+    color: #f4f4f4;
+}
+
+.carousel-caption .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel-controls {
+    position: relative;
+    bottom: 55rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-prev, .carousel-next {
+    background-color: rgb(64, 46, 5);
+    color: #f7f7f7;
+    padding: 1rem; /* Adjust padding to fit the smaller size */
+    cursor: pointer;
+}
+
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+section a {
+    color: #ff0059;
+    text-decoration: none;
+}
+
+section p {
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.latest-news {
+    background: #00000085;
+}
+
+.carousel-hidden {
+    display: none;
+}
+
+.carousel-visible {
+    display: block;
+}
+
+#carouselHeader { 
+    margin-left: 14rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(119, 143, 166);
+}
+
+#mainSection {
+    background: url(Images/STEMImportance.webp) no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+#titleDescription{
+    background-color: rgba(0, 0, 0, 0.528);
+    padding: 0.5rem; /* Adjust padding to fit the smaller size */
+    border-radius: 5px;
+    height: 150px;
+    
+}
+
+#titleH1 {
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem;
+    background-color: #0707077e;
+    margin: 1rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.latest-news h2 {
+    color: #fcf8f8;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.news-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    background-color: #0c0c0c68;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    text-align: center;
+    color: rgb(251, 250, 250);
+    font-size: larger;
+    margin: 1.5rem;
+}
+
+.news-item p {
+    margin: 1rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.941);
+    font-size: xx-large;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    
+}
+
+#QuantumAndElon2 {
+    width: 60%
+}
+
+.news-item li {
+    color: white;
+    padding: .5rem;
+    font-size: larger;
+
+}
+
+section a {
+    color: #ff0059;
+    text-decoration: none;
+}

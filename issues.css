@@ -27,7 +27,7 @@ body {
 .carouselCon {
     margin: 4rem;
     background-color: rgba(7, 7, 7, 0.663);
-    height: 1200px;
+    height: 1000px;
 }
 .carousel {
     display: flex;
@@ -81,6 +81,19 @@ body {
     font-size: large;
 }
 
+#identifiedIssues {
+    margin-left: 3rem;
+
+}
+
+.carousel-caption li {
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: #f4f4f4;
+    font-size: large;
+    margin-left: 4rem;
+}
+
 .carousel-caption .btn {
     background-color: #007bff;
     color: #fff;
@@ -132,7 +145,17 @@ section h2 {
     background: #0000009e;
 }
 
+.latest-proposal {
+    background: #0000009e;
+}
+
 .latest-news h2 {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.latest-proposal h2 {
     color: #f4f4f4;
     text-align: center;
     font-size: xx-large;
